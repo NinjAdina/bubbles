@@ -11,8 +11,10 @@ draw = function () {
 
   if (mouseIsPressed) bubbles.push(new Bubble(mouseX, mouseY));
 
-  for (var i = 0; i < bubbles.length; ++i) {
-   bubbles[i].update();
-   bubbles[i].display();
- }
+  var index = 0;
+  while (index < bubbles.length) {
+    bubbles[index].update();
+    bubbles[index].display();
+    index += 1; // recall that this can be written as ++i
+  }
 };
