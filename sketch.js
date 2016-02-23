@@ -7,7 +7,7 @@ var updateAndDisplay = function(fishy) {
 
 var addNumFish = function(totalFish) {
   while(fish.length < totalFish) {
-    fish.push(new Fish(random(0, width), random(0, height)));
+    fish.push(new Fish(random(width-100, width), random(height/3, height/2)));
   }
 };
 

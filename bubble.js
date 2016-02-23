@@ -9,7 +9,7 @@ Fish.prototype = {
   fishHeight: 10,
 
   update: function() {
-    this.x += random(0, -5); // this.x = this.x + random(0,2)
+    this.x += random(0, -5); // this.x = this.x + random(0,2);
     this.y += random(-1, 1);
     if (this.x < this.fishWidth * -1) this.x =  this.fishWidth + width;
     // if (this.y - this.radius <= 0) this.y = this.radius + random(0, 2);----- this made bubbles "fizz" and collect on the top.
